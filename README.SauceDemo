@@ -65,15 +65,7 @@ newman run collection.json -e environment.json -r html,junit
 
 Baraa Hussein
 
-------------------------------------------------------------------------
 
-# وصف بالعربي
-
-مشروع أوتوميشن باستخدام Postman لمحاكاة موقع SauceDemo\
-تم بناء جميع الريكويست بناءً على سيناريوهات Selenium السابقة.
-
-يشمل: - Login صحيح وخاطئ - إضافة للسلة - Checkout - حذف البيانات -
-Reset - Logout
 
 تم استخدام: - Environment variables - Tests - Newman للتشغيل الآلي -
 تقارير HTML و JUnit
