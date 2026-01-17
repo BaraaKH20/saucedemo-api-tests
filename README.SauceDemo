@@ -1,0 +1,79 @@
+# Postman API Automation -- SauceDemo Simulation
+
+## Project Overview
+
+This project simulates the SauceDemo website workflow using API
+automation with Postman. It follows the same logic used previously in UI
+automation (Selenium) and covers full user flow: Login → Add to Cart →
+Checkout → Orders → Reset → Logout
+
+## Tools Used
+
+-   Postman
+-   Newman
+-   JSON Server
+-   Node.js
+-   GitHub
+
+## Features
+
+-   Environment variables
+-   Automated tests
+-   Data-driven runs
+-   Newman CLI execution
+-   HTML & JUnit reports
+
+## Environment
+
+Name: saucedemo\
+Variables: - base_url - token - user_id
+
+## Requests Flow (Based on Selenium Tests)
+
+1.  Login -- Valid
+2.  Login -- Invalid
+3.  Add to Cart
+4.  Get Cart
+5.  Checkout
+6.  Get Orders
+7.  Open Menu
+8.  Reset App
+9.  Logout
+10. Delete Order 11-20. Additional validations & negative scenarios
+
+## Example Endpoints
+
+-   POST /login
+-   POST /cart
+-   GET /cart
+-   POST /checkout
+-   GET /orders
+-   DELETE /orders/:id
+
+## Newman Run
+
+``` bash
+newman run collection.json -e environment.json -r html,junit
+```
+
+## Reports
+
+-   HTML Report
+-   JUnit Report
+
+## Author
+
+Baraa Hussein
+
+------------------------------------------------------------------------
+
+# وصف بالعربي
+
+مشروع أوتوميشن باستخدام Postman لمحاكاة موقع SauceDemo\
+تم بناء جميع الريكويست بناءً على سيناريوهات Selenium السابقة.
+
+يشمل: - Login صحيح وخاطئ - إضافة للسلة - Checkout - حذف البيانات -
+Reset - Logout
+
+تم استخدام: - Environment variables - Tests - Newman للتشغيل الآلي -
+تقارير HTML و JUnit
